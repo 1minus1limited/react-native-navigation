@@ -11,6 +11,7 @@ import android.view.View;
 
 import com.reactnativenavigation.NavigationApplication;
 import com.reactnativenavigation.react.*;
+import com.reactnativenavigation.react.OverlayPermission;
 import com.reactnativenavigation.utils.CompatUtils;
 
 public abstract class SplashActivity extends AppCompatActivity {
@@ -53,8 +54,8 @@ public abstract class SplashActivity extends AppCompatActivity {
             return;
         }
 
-        if (ReactDevPermission.shouldAskPermission()) {
-            ReactDevPermission.askPermission(this);
+        if (OverlayPermission.shouldAskPermission()) {
+            OverlayPermission.askPermission(this);
             return;
         }
 
