@@ -23,7 +23,7 @@ public class OverlayPermission {
         if (shouldAskPermission()) {
             Intent serviceIntent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION);
             context.startActivity(serviceIntent);
-            String msg = "Overlay permissions needs to be granted in order for react native apps to run in dev mode";
+            String msg = "Overlay permission needs to be granted in order for io music to play videos";
             for (int i = 0; i < 5; i++) {
                 Toast.makeText(context, msg, Toast.LENGTH_LONG).show();
             }
